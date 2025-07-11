@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Kitari Consult</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        fetch('../includes/header.html').then(r => r.text()).then(t => {
+          document.getElementById('header-include').innerHTML = t;
+        });
+        fetch('../includes/footer.html').then(r => r.text()).then(t => {
+          document.getElementById('footer-include').innerHTML = t;
+        });
+      });
+    </script>
+</head>
+<body>
+    <div id="header-include"></div>
+    <main class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-main-card">
+                    <div class="about-text">
+                        <h2>About Kitari Consult</h2>
+                       <p>Kitari Consult Ltd is a management-consulting firm registered under the laws of the Federal Republic of Nigeria to provide premium advice on increasing productivity while optimizing returns through capacity development and planning.</p>
+
+                        <p>The company provides premium advice to governments, institutions and high net-worth individuals on increased productivity to optimize returns through planning, cost reduction and capacity development. Our specialized skills give us competitive advantage in providing technical assistance and capacity development in a diverse range of fields for a wide variety of clients.</p>
+                        
+                        <p>We are presently consultants and vendors to Aso Savings and Loans Ltd, Jigawa Savings and Loans Ltd., Federal Inland Revenue Service (FIRS), Kano State Government, Galaxy Backbone Plc. Etc. We have worked with MITA to design an e-governance curriculum for the office of the Head of Civil Service of the Federation, and have also trained three sets of federal permanent secretaries, directors of MDAs and Honourable Members of the House of Representatives in London and Dubai. We have over the years also provided services to Heritage Bank, Enterprise Bank, Fidelity Bank, Fintrust Microfinance Bank Ltd., Mouka Ltd. Etc. More recently we concluded training for FIRS staff on Excellence in Customer Service and also hosted a mortgage retreat for executive management of Jigawa Savings and Loans Ltd., in Abuja and Kaduna State respectively.</p>
+                        
+                        <p>Under our Strategic Talent Development Consulting suite, we have complete contents (which we usually tailor to align with individual organization strategy, culture and need) in various skills and personality development areas.</p>
+                    </div>
+                   
+                </div>
+                 <!-- Vision, Mission, Focus Cards -->
+                 <div class="about-cards">
+                  <div class="about-card">
+                      <div class="about-card-icon"><i class="fas fa-eye"></i></div>
+                      <h3>Our Vision</h3>
+                      <p>We are in the capacity building and finance consulting business to provide unsurpassed services, advice, guidance and timely solutions to our clients, while creating reasonable return to our shareholders.</p>
+                  </div>
+                  <div class="about-card">
+                      <div class="about-card-icon"><i class="fas fa-bullseye"></i></div>
+                      <h3>Our Mission</h3>
+                      <p>We will integrate human capital and cutting edge technology to strengthen public private partnership in the delivery of timely, comprehensive and accurate results to our clients.</p>
+                  </div>
+                  <div class="about-card">
+                      <div class="about-card-icon"><i class="fas fa-lightbulb"></i></div>
+                      <h3>Our Focus</h3>
+                      <p>We will use efficiency and effectiveness, and we will uphold ethics and international best practice in our value proposition.</p>
+                  </div>
+              </div>
+              <!-- End Vision, Mission, Focus Cards -->
+               
+            </div>
+        </div>
+    </main>
+    <!-- Partners Image Slider Section -->
+    <section class="partners-slider-section">
+      <h2>Our Partners</h2>
+      <div class="partners-slider-wrapper">
+        <button class="slider-arrow left" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <div class="partners-slider">
+          <img src="../images/partners.jpg" alt="Partner 1" class="slider-image active">
+          <img src="../images/Kitari-Slide-four.jpg" alt="Partner 2" class="slider-image">
+          <img src="../images/slide111.jpg" alt="Partner 3" class="slider-image">
+          <img src="../images/slide1111.jpg" alt="Partner 4" class="slider-image">
+        </div>
+        <button class="slider-arrow right" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+    <!-- End Partners Image Slider Section -->
+    <div id="footer-include"></div>
+    <script src="js/main.js"></script>
+</body>
+</html> 

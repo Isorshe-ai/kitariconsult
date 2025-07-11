@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Clients | Kitari Consult</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        fetch('../includes/header.html').then(r => r.text()).then(t => {
+          document.getElementById('header-include').innerHTML = t;
+        });
+        fetch('../includes/footer.html').then(r => r.text()).then(t => {
+          document.getElementById('footer-include').innerHTML = t;
+        });
+      });
+    </script>
+</head>
+<body>
+    <div id="header-include"></div>
+    <main id="clients">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Clients</h2>
+                <p>We have been tested and trusted by many. Kitari Consult has built partnerships and strategic alliances with local, international, and multilateral organizations to deliver value.</p>
+            </div>
+            <div class="clients-grid">
+                <div class="client-col">
+                    <h3>Public Sector</h3>
+                    <ul>
+                        <li>National Assembly</li>
+                        <li>Office of the Head of the Civil Service of the Federation</li>
+                        <li>AMCON</li>
+                        <li>PHCN</li>
+                        <li>Kano State Government House</li>
+                        <li>Office of the Secretary to the State Government, Kano State</li>
+                        <li>Ministry of Science and Technology, Kano State</li>
+                        <li>Kano State Investment & Properties Ltd.</li>
+                        <li>Kano State Housing Corporation</li>
+                        <li>Jigawa State Government</li>
+                        <li>Jigawa Savings and Loans</li>
+                        <li>Federal Inland Revenue Service (FIRS)</li>
+                    </ul>
+                </div>
+                <div class="client-col">
+                    <h3>Private Sector</h3>
+                    <ul>
+                        <li>Aso Savings & Loans Plc.</li>
+                        <li>AMCON</li>
+                        <li>Abuja Investment and Properties Ltd.</li>
+                        <li>Galaxy Backbone Plc</li>
+                        <li>Globacom</li>
+                        <li>Aero Contractors</li>
+                        <li>Kabo Air</li>
+                        <li>IRS</li>
+                        <li>Arik</li>
+                        <li>Chanchangi Airlines</li>
+                        <li>Talamiz Nig Ltd.</li>
+                        <li>Ahmed Zakari & Co.</li>
+                        <li>Heritage Bank</li>
+                        <li>Enterprise Bank</li>
+                        <li>MRS Limited</li>
+                        <li>LUBCON International</li>
+                        <li>Texas Global Resources</li>
+                        <li>Snow Energy</li>
+                        <li>Jubilee-Life Mortgage Bank</li>
+                        <li>Fintrust MFB</li>
+                        <li>Mayfair MFB</li>
+                        <li>Snow MFB</li>
+                    </ul>
+                </div>
+                <div class="client-col client-logo-col">
+                    <img src="../images/partners.jpg" alt="Client Logos" style="max-width:100%; border-radius:12px; box-shadow:0 2px 12px rgba(35,39,47,0.08);">
+                </div>
+            </div>
+            <div class="client-cta">
+                <h3>The best choice is Kitari Consult Limited</h3>
+                <p>We are looking forward to hearing from you.</p>
+            </div>
+        </div>
+    </main>
+     <!-- Partners Image Slider Section -->
+     <section class="partners-slider-section">
+      <h2>Our Partners</h2>
+      <div class="partners-slider-wrapper">
+        <button class="slider-arrow left" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <div class="partners-slider">
+          <img src="../images/partners.jpg" alt="Partner 1" class="slider-image active">
+          <img src="../images/Kitari-Slide-four.jpg" alt="Partner 2" class="slider-image">
+          <img src="../images/slide111.jpg" alt="Partner 3" class="slider-image">
+          <img src="../images/slide1111.jpg" alt="Partner 4" class="slider-image">
+        </div>
+        <button class="slider-arrow right" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+    <!-- End Partners Image Slider Section -->
+    <div id="footer-include"></div>
+    <script src="js/main.js"></script>
+</body>
+</html> 

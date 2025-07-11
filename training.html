@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training | Kitari Consult</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        fetch('../includes/header.html').then(r => r.text()).then(t => {
+          document.getElementById('header-include').innerHTML = t;
+        });
+        fetch('../includes/footer.html').then(r => r.text()).then(t => {
+          document.getElementById('footer-include').innerHTML = t;
+        });
+      });
+    </script>
+</head>
+<body>
+    <div id="header-include"></div>
+    <main id="training">
+        <div class="container">
+            <div class="section-header">
+                <h2>Training & Capacity Building</h2>
+                <p>Kitari Consult Ltd. offers a wide range of training and capacity building programs designed to meet the development needs of personnel in government and private agencies. Our courses are led by highly qualified consultants and practitioners, ensuring practical, impactful learning experiences.</p>
+            </div>
+            <div class="training-flex">
+                <div class="training-info">
+                    <h3>What We Offer</h3>
+                    <ul>
+                        <li>Turnkey services and courses designed specifically for employees</li>
+                        <li>Instructors with deep public sector experience</li>
+                        <li>Rapid course roll-outs and convenient payment options</li>
+                        <li>Open Enrollment and Agency-Specific Courses</li>
+                    </ul>
+                    <h3>Course Formats</h3>
+                    <ul>
+                        <li><strong>Open Enrollment Courses:</strong> For individuals or small groups from multiple agencies</li>
+                        <li><strong>Agency-Specific Courses:</strong> Custom workshops for organizations with specific needs</li>
+                    </ul>
+                    <h3>Entitlements</h3>
+                    <ul>
+                        <li>Course Completion Certificate – CMD certified</li>
+                        <li>Training materials and writing facilities</li>
+                        <li>Two months free mentorship and practice with Kitari Consult equipment</li>
+                        <li>Free Wifi/Internet for the duration of the training</li>
+                        <li>Refreshments, lodging, and transportation (by agreement)</li>
+                        <li>Souvenirs and comprehensive training reports</li>
+                    </ul>
+                    <h3>Instructors</h3>
+                    <p>All KCL courses are led by highly qualified consultants from government, universities, and the private sector or KCL in-house facilitators. Practitioners of the skills they teach, all KCL trainers bring a wealth of knowledge and experience in training personnel that address a wide range of issues and challenges.</p>
+                </div>
+                <div class="training-image-col">
+                    <img src="../images/cc4-Training.jpg" alt="Training Session" class="training-img">
+                    <img src="../images/cc5-Training.jpg" alt="Workshop" class="training-img">
+                </div>
+            </div>
+            <div class="training-programs">
+                <h3>Sample Training Programs</h3>
+                <ul>
+                    <li>Computer Appreciation</li>
+                    <li>Autocad, Revitt, ArchiCad</li>
+                    <li>Social Media Marketing</li>
+                    <li>Customer Service</li>
+                    <li>Human Resource Management</li>
+                    <li>Real Estate Management</li>
+                    <li>E-Governance and Public Service</li>
+                    <li>Performance Appraisal</li>
+                    <li>Tax and Taxation</li>
+                    <li>Planning, Financing and Executing Projects</li>
+                    <li>Corporate Governance and Ethics in Public Service</li>
+                </ul>
+                <p>Our training includes interactive sessions where participants discuss real-life experiences and develop practical solutions.</p>
+            </div>
+            <div class="training-cta">
+                <h3>Your Capacity is Your Unique Selling Proposition</h3>
+                <p>You need our expertise—please don't take it lightly. <a href="contact.html" class="btn">Contact Us</a></p>
+            </div>
+        </div>
+    </main>
+    <div id="footer-include"></div>
+    <script src="js/main.js"></script>
+</body>
+</html> 

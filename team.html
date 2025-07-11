@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | Kitari Consult</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        fetch('../includes/header.html').then(r => r.text()).then(t => {
+          document.getElementById('header-include').innerHTML = t;
+        });
+        fetch('../includes/footer.html').then(r => r.text()).then(t => {
+          document.getElementById('footer-include').innerHTML = t;
+        });
+      });
+    </script>
+</head>
+<body>
+    <div id="header-include"></div>
+    <main id="team">
+        <div class="container">
+            <h2>Our Team</h2>
+            <p class="team-summary">Meet our diverse team of professionals, each bringing unique expertise and a passion for delivering value to our clients. Together, we drive innovation, operational excellence, and sustainable growth for Kitari Consult and our partners.</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="../images/feyi akinbile.jpeg" alt="Feyi Akinbile">
+                    <h3>Feyi Akinbile</h3>
+                    <p>Principal Consultant. Expert in strategic management and organizational development.</p>
+                </div>
+                <div class="team-card lead-team-card">
+                    <img src="../images/Ali Magashi.jpeg" alt="Ali Magashi">
+                    <h3>Ali Magashi</h3>
+                    <p>Managing Director. Specialist in finance consulting and capacity building.</p>
+                </div>
+                <div class="team-card">
+                    <img src="../images/usman Aleshinloye.jpeg" alt="Usman Aleshinloye">
+                    <h3>Usman Aleshinloye</h3>
+                    <p>Senior Consultant. Focused on public-private partnerships and project delivery.</p>
+                </div>
+                <div class="team-card">
+                    <img src="../images/mukhtar haliru.jpeg" alt="Mukhtar Haliru">
+                    <h3>Mukhtar Haliru</h3>
+                    <p>Consultant. Experienced in training, research, and client relations.</p>
+                </div>
+                <div class="team-card">
+                    <img src="../images/favour.jpg" alt="Favour Oriaku">
+                    <h3>Favour Oriaku</h3>
+                    <p>Consultant. Skilled in business analysis and operational excellence.</p>
+                </div>
+                <div class="team-card">
+                  <img src="../images/TayoAbiodun.jpeg" alt="Tayo Abiodun">
+                  <h3>Tayo Abiodun</h3>
+                  <p>Tayo Abiodun is a Human Resource/Management consultant and practitioner of over 25 years experience. </p>
+              </div>
+            </div>
+        </div>
+    </main>
+      <!-- Partners Image Slider Section -->
+      <section class="partners-slider-section">
+        <h2>Our Partners</h2>
+        <div class="partners-slider-wrapper">
+          <button class="slider-arrow left" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+          <div class="partners-slider">
+            <img src="../images/partners.jpg" alt="Partner 1" class="slider-image active">
+            <img src="../images/Kitari-Slide-four.jpg" alt="Partner 2" class="slider-image">
+            <img src="../images/slide111.jpg" alt="Partner 3" class="slider-image">
+            <img src="../images/slide1111.jpg" alt="Partner 4" class="slider-image">
+          </div>
+          <button class="slider-arrow right" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </section>
+      <!-- End Partners Image Slider Section -->
+    <div id="footer-include"></div>
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Kitari Consult</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        fetch('../includes/header.html').then(r => r.text()).then(t => {
+          document.getElementById('header-include').innerHTML = t;
+        });
+        fetch('../includes/footer.html').then(r => r.text()).then(t => {
+          document.getElementById('footer-include').innerHTML = t;
+        });
+      });
+    </script>
+</head>
+<body>
+    <div id="header-include"></div>
+    <main id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <p>Explore highlights from our projects, events, and training sessions.</p>
+            </div>
+            <div class="gallery-grid">
+                <a href="../images/cc2.jpg" target="_blank" data-caption="Project Launch Event"><img src="../images/cc2.jpg" alt="Project 1"></a>
+                <a href="../images/cc3.jpg" target="_blank" data-caption="Team Strategy Session"><img src="../images/cc3.jpg" alt="Project 2"></a>
+                <a href="../images/cc4-Training.jpg" target="_blank" data-caption="Training Session 1"><img src="../images/cc4-Training.jpg" alt="Training 1"></a>
+                <a href="../images/cc5-Training.jpg" target="_blank" data-caption="Training Session 2"><img src="../images/cc5-Training.jpg" alt="Training 2"></a>
+                <a href="../images/cc6-Training.jpg" target="_blank" data-caption="Workshop Group"><img src="../images/cc6-Training.jpg" alt="Training 3"></a>
+                <a href="../images/cc7-Trining.jpg" target="_blank" data-caption="Interactive Training"><img src="../images/cc7-Trining.jpg" alt="Training 4"></a>
+                <a href="../images/cc8-Training.jpg" target="_blank" data-caption="Certificate Award"><img src="../images/cc8-Training.jpg" alt="Training 5"></a>
+                <a href="../images/cc9-1.jpg" target="_blank" data-caption="Project Site"><img src="../images/cc9-1.jpg" alt="Project 3"></a>
+                <a href="../images/cc10.jpg" target="_blank" data-caption="Team Collaboration"><img src="../images/cc10.jpg" alt="Project 4"></a>
+                <a href="../images/cc11.jpg" target="_blank" data-caption="Client Meeting"><img src="../images/cc11.jpg" alt="Project 5"></a>
+                <a href="../images/Kitari-Slide-four.jpg" target="_blank" data-caption="Annual Conference"><img src="../images/Kitari-Slide-four.jpg" alt="Event 1"></a>
+                <a href="../images/slide111.jpg" target="_blank" data-caption="Networking Event"><img src="../images/slide111.jpg" alt="Event 2"></a>
+            </div>
+        </div>
+    </main>
+    <div id="footer-include"></div>
+    <div id="lightbox-modal" class="lightbox-modal" style="display:none;">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close">&times;</button>
+            <button class="lightbox-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <div class="lightbox-img-wrapper">
+                <img src="" alt="Gallery Image" class="lightbox-img">
+                <div class="lightbox-caption"></div>
+            </div>
+            <button class="lightbox-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html> 

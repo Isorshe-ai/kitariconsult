@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight | Kitari Consult</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        fetch('../includes/header.html').then(r => r.text()).then(t => {
+          document.getElementById('header-include').innerHTML = t;
+        });
+        fetch('../includes/footer.html').then(r => r.text()).then(t => {
+          document.getElementById('footer-include').innerHTML = t;
+        });
+      });
+    </script>
+</head>
+<body>
+    <div id="header-include"></div>
+    <!-- Hero Banner Section -->
+    <section class="hero" id="insight-hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1500&q=80" alt="Kitari Insight Banner" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Insight</h1>
+                <p>Discover the people, partnerships, and stories that drive Kitari Consult. Explore our team, clients, gallery, and strategic alliances.</p>
+                <div class="hero-btns">
+                    <a href="team.html" class="btn">Our Team</a>
+                    <a href="clients.html" class="btn btn-outline">Our Clients</a>
+                    <a href="gallery.html" class="btn btn-outline">Gallery</a>
+                    <a href="alliances.html" class="btn btn-outline">Alliances</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="about" id="insight">
+        <div class="container">
+            <div class="section-header">
+                <h2>Insight</h2>
+                <p>Discover the people, partnerships, and stories that drive Kitari Consult. Explore our team, clients, gallery, and strategic alliances.</p>
+            </div>
+            <div class="insight-card-grid">
+                <div class="insight-card" id="team-card">
+                    <div class="insight-card-icon"><i class="fas fa-users"></i></div>
+                    <h3>Our Team</h3>
+                    <p>Meet our experienced consultants and professionals dedicated to delivering value and excellence.</p>
+                    <button class="btn btn-outline insight-view-btn" data-modal="team-modal">View More</button>
+                </div>
+                <div class="insight-card" id="clients-card">
+                    <div class="insight-card-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Our Clients</h3>
+                    <p>We are trusted by many organizations and have built strong partnerships locally and internationally.</p>
+                    <button class="btn btn-outline insight-view-btn" data-modal="clients-modal">View More</button>
+                </div>
+                <div class="insight-card" id="gallery-card">
+                    <div class="insight-card-icon"><i class="fas fa-images"></i></div>
+                    <h3>Gallery</h3>
+                    <p>Explore highlights from our projects, events, and training sessions.</p>
+                    <button class="btn btn-outline insight-view-btn" data-modal="gallery-modal">View More</button>
+                </div>
+                <div class="insight-card" id="alliances-card">
+                    <div class="insight-card-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Strategic Alliances</h3>
+                    <p>We collaborate with local, international, and multilateral organizations to leverage our capacity to deliver value.</p>
+                    <button class="btn btn-outline insight-view-btn" data-modal="alliances-modal">View More</button>
+                </div>
+            </div>
+        </div>
+        <!-- Modals/Sliders for each card -->
+        <div class="insight-modal" id="team-modal">
+            <div class="insight-modal-content">
+                <span class="insight-modal-close">&times;</span>
+                <h3>Meet Our Team</h3>
+                <div class="insight-slider team-slider">
+                    <!-- Team member slides (to be filled by JS or static HTML) -->
+                    <div class="insight-slide">
+                        <img src="images/Ali Magashi.jpeg" alt="Ali Magashi">
+                        <h4>Ali Magashi</h4>
+                        <p>Lead Consultant</p>
+                    </div>
+                    <div class="insight-slide">
+                        <img src="images/feyi akinbile.jpeg" alt="Feyi Akinbile">
+                        <h4>Feyi Akinbile</h4>
+                        <p>Consultant</p>
+                    </div>
+                    <div class="insight-slide">
+                        <img src="images/mukhtar haliru.jpeg" alt="Mukhtar Haliru">
+                        <h4>Mukhtar Haliru</h4>
+                        <p>Consultant</p>
+                    </div>
+                    <div class="insight-slide">
+                        <img src="images/usman Aleshinloye.jpeg" alt="Usman Aleshinloye">
+                        <h4>Usman Aleshinloye</h4>
+                        <p>Consultant</p>
+                    </div>
+                </div>
+                <div class="insight-slider-controls">
+                    <button class="insight-slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="insight-slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="insight-modal" id="clients-modal">
+            <div class="insight-modal-content">
+                <span class="insight-modal-close">&times;</span>
+                <h3>Our Clients</h3>
+                <div class="insight-slider clients-slider">
+                    <div class="insight-slide">
+                        <img src="images/partners.jpg" alt="Clients & Partners">
+                        <p>Trusted by leading organizations in the public and private sectors.</p>
+                    </div>
+                    <div class="insight-slide">
+                        <img src="images/cc2.jpg" alt="Client Logo 2">
+                        <p>Strong partnerships locally and internationally.</p>
+                    </div>
+                    <div class="insight-slide">
+                        <img src="images/cc3.jpg" alt="Client Logo 3">
+                        <p>Delivering value to diverse clients.</p>
+                    </div>
+                </div>
+                <div class="insight-slider-controls">
+                    <button class="insight-slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="insight-slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="insight-modal" id="gallery-modal">
+            <div class="insight-modal-content">
+                <span class="insight-modal-close">&times;</span>
+                <h3>Gallery Highlights</h3>
+                <div class="insight-slider gallery-slider">
+                    <div class="insight-slide">
+                        <img src="images/cc4-Training.jpg" alt="Gallery 1">
+                        <p>Project Highlights</p>
+                    </div>
+                    <div class="insight-slide">
+                        <img src="images/cc5-Training.jpg" alt="Gallery 2">
+                        <p>Events & Training</p>
+                    </div>
+                    <div class="insight-slide">
+                        <img src="images/cc6-Training.jpg" alt="Gallery 3">
+                        <p>Team in Action</p>
+                    </div>
+                </div>
+                <div class="insight-slider-controls">
+                    <button class="insight-slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="insight-slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="insight-modal" id="alliances-modal">
+            <div class="insight-modal-content">
+                <span class="insight-modal-close">&times;</span>
+                <h3>Strategic Alliances</h3>
+                <div class="insight-slider alliances-slider">
+                    <div class="insight-slide">
+                        <img src="images/logo.png" alt="MITA">
+                        <h4>MITA</h4>
+                        <p>Local and international collaboration for greater impact.</p>
+                    </div>
+                    <div class="insight-slide">
+                        <img src="images/logo.png" alt="Kedari Capital">
+                        <h4>Kedari Capital</h4>
+                        <p>Financial and strategic partnership.</p>
+                    </div>
+                    <div class="insight-slide">
+                        <img src="images/logo.png" alt="Alpha Law Chambers">
+                        <h4>Alpha Law Chambers</h4>
+                        <p>Legal and advisory support.</p>
+                    </div>
+                </div>
+                <div class="insight-slider-controls">
+                    <button class="insight-slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="insight-slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer-include"></div>
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations | Kitari Consult</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        fetch('../includes/header.html').then(r => r.text()).then(t => {
+          document.getElementById('header-include').innerHTML = t;
+        });
+        fetch('../includes/footer.html').then(r => r.text()).then(t => {
+          document.getElementById('footer-include').innerHTML = t;
+        });
+      });
+    </script>
+</head>
+<body>
+    <div id="header-include"></div>
+    <!-- Hero Banner Section -->
+    <section class="hero" id="operations-hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1500&q=80" alt="Kitari Operations Banner" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Operations</h1>
+                <p>Kitari Consult delivers value through three core operations—Training & Capacity Building, Housing Finance & Real Estate, and Aviation Consulting & Advisory—each designed to meet the unique needs of our clients and partners.</p>
+                <div class="hero-btns">
+                    <a href="training.html" class="btn">Training</a>
+                    <a href="housing.html" class="btn btn-outline">Housing Finance</a>
+                    <a href="aviation.html" class="btn btn-outline">Aviation Consulting</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="services" id="operations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Operations</h2>
+                <p>Kitari Consult delivers value through three core operations:</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Training</h3>
+                    <p>We offer courses specially designed to meet the training and development needs of all personnel in Government and Private Agencies. Multiple delivery methods are employed, including lectures, demonstrations, practicals, and workshops using real-life case studies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-home"></i></div>
+                    <h3>Housing Finance</h3>
+                    <p>Kitari Consult is a major Housing Finance and Real Estate company. We have handled major projects, including the design of the Darmanawa Royal City Project, Kano, delivering over a thousand affordable houses within Kano metropolis.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-plane"></i></div>
+                    <h3>Aviation Consulting</h3>
+                    <p>We are a leading authority in Aviation Consulting and Advisory, providing expert services to organizations such as AMCON and offering strategic advice on airline operations and status.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer-include"></div>
+    <script src="js/main.js"></script>
+</body>
+</html> 
